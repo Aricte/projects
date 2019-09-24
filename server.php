@@ -41,7 +41,10 @@ if (isset($_POST['login_user']))
 	{
 		$_SESSION['username'] = $username; //Stores username
 		$_SESSION['success'] = "You are now logged in"; //Custom sucess message
-		echo '<script type="text/javascript">alert("'.$_SESSION['success'].'");</script>'; //Alerts the User of "success"
+		echo 
+        	'<script type="text/javascript">alert("'.$_SESSION['success'].'");
+        	window.location.href="https://aricte.altervista.org/blank.php"
+        	</script>';
 	}
 	else 
 	{
